@@ -26,5 +26,17 @@
     "description": "An instant website generator that produces complete, downloadable business websites. Preview your entire site before you pay. No subscriptions, just a simple one-time purchase.",
     "link": "Visit foundrr.site",
     "generating": "Generating..."
+  },
+  "ProductsPage": {
+    "title": "Our Products",
+    "subtitle": "Tools built for simplicity and performance.",
+    "comingSoon": "Coming Soon",
+    "notifyMe": "Notify Me"
+  },
+  "ContactPage": {
+    "title": "Get in Touch",
+    "subtitle": "We'd love to hear from you. Check out our support channels.",
+    "email": "Email Support",
+    "social": "Follow us"
   }
 }

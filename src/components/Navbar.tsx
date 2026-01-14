@@ -13,8 +13,8 @@ export default function Navbar() {
         {t('brand')}
       </Link>
       <div className="flex items-center gap-6">
-         <Link href="https://foundrr.site" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">{t('products')}</Link>
-         <a href="mailto:contact@foundrr.online" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">{t('contact')}</a>
+         <Link href="/products" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">{t('products')}</Link>
+         <Link href="/contact" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">{t('contact')}</Link>
          <div className="h-4 w-px bg-white/10" />
          <LanguageSwitcher />
       </div>

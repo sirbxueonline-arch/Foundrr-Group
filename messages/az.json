@@ -26,5 +26,17 @@
     "description": "Tam, yüklənə bilən biznes veb-saytları hazırlayan anında sayt generatoru. Ödəniş etməzdən əvvəl saytınıza baxın. Abunə yoxdur, sadəcə birdəfəlik ödəniş.",
     "link": "foundrr.site-a keçin",
     "generating": "Hazırlanır..."
+  },
+  "ProductsPage": {
+    "title": "Məhsullarımız",
+    "subtitle": "Sadəlik və sürət üçün hazırlanmış alətlər.",
+    "comingSoon": "Tezliklə",
+    "notifyMe": "Xəbər Et"
+  },
+  "ContactPage": {
+    "title": "Bizimlə Əlaqə",
+    "subtitle": "Sizdən eşitmək istərdik. Dəstək kanallarımızla tanış olun.",
+    "email": "E-poçt Dəstəyi",
+    "social": "Bizi izləyin"
   }
 }
