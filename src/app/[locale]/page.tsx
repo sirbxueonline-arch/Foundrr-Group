@@ -1,6 +1,5 @@
 import {useTranslations} from 'next-intl';
 import {Link} from '@/i18n/routing';
-import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 export default function Home() {
   const t = useTranslations();
@@ -13,16 +12,7 @@ export default function Home() {
         <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-indigo-500/[0.05] blur-[100px] rounded-full" />
       </div>
 
-      {/* Navbar - Kept here to ensure consistent header design as requested */}
-      <nav className="fixed top-6 left-1/2 -translate-x-1/2 w-max max-w-2xl h-12 glass-dark rounded-full flex items-center gap-8 md:gap-12 px-6 z-50 animate-scale-in border border-white/5">
-        <span className="font-semibold text-sm tracking-tight text-white">{t('Navbar.brand')}</span>
-        <div className="flex items-center gap-6">
-           <Link href="https://foundrr.site" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">{t('Navbar.products')}</Link>
-           <a href="mailto:contact@foundrr.online" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">{t('Navbar.contact')}</a>
-           <div className="h-4 w-px bg-white/10" />
-           <LanguageSwitcher />
-        </div>
-      </nav>
+      {/* Navbar - Handled in layout.tsx */}
 
       <main className="relative max-w-5xl mx-auto px-6 pt-40 pb-20 z-10">
         {/* Hero */}
