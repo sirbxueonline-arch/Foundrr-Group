@@ -2,41 +2,73 @@
   "Navbar": {
     "brand": "Foundrr Group",
     "products": "Məhsullar",
+    "about": "Haqqımızda",
     "contact": "Əlaqə",
     "getInTouch": "Bizimlə Əlaqə"
   },
   "Hero": {
     "badge": "Foundrr Group",
-    "title": "Sadə rəqəmsal<br />alətlər qururuq.",
-    "subtitle": "Mürəkkəbliyi aradan qaldıraraq, vaxtınıza və diqqətinizə hörmət edən sabit, etibarlı proqram təminatı hazırlayırıq."
+    "title": "Sadə, işlək proqram təminatı qururuq.",
+    "subtitle": "Abunə yoxdur. İdarə paneli yoxdur. Sadəcə öz işini görən alətlər.",
+    "cta": "Foundrr-ı iş başında görün"
   },
-  "Values": {
-    "title": "Yanaşmamız",
-    "simplicityTitle": "İlk növbədə Sadəlik",
-    "simplicityDesc": "Proqram təminatının mahiyyəti sadə olmalıdır. Lazımsız funksiyalar yox, sadəcə işləyən alətlər.",
-    "reliabilityTitle": "Etibarlılıq",
-    "reliabilityDesc": "Məhsullarımız uzunmüddətli istifadə üçün nəzərdə tutulub. Son trendləri izləməkdənsə, sabitliyə üstünlük veririk.",
+  "HowItWorks": {
+    "title": "Əsas Məhsulumuz: Foundrr WebAI",
+    "step1Title": "1. Təsvir Edin",
+    "step1Desc": "Nəyə ehtiyacınız olduğunu sadə dildə izah edin.",
+    "step2Title": "2. Baxış Keçirin",
+    "step2Desc": "Saytınızı anında görün. Qeydiyyat tələb olunmur.",
+    "step3Title": "3. Yükləyin",
+    "step3Desc": "Bir dəfə ödəyin. Kodu əldə edin. İstədiyiniz yerdə yerləşdirin."
+  },
+  "Proof": {
+    "dontsTitle": "Biz nələri etmirik",
+    "donts": {
+      "subs": "Abunəlik yoxdur",
+      "accounts": "İdarə olunacaq hesablar yoxdur",
+      "roadmaps": "Yol xəritəsi bloq yazıları yoxdur"
+    },
+    "dos": {
+      "oneTool": "Bir alət. Bir qiymət. Bir nəticə."
+    },
     "performanceTitle": "Sürət",
-    "performanceDesc": "Sürətli və yüngül. Biz istifadəçilərinizin vaxtına hörmət edirik."
+    "speed": "Yaranan saytlar < 100ms-də açılır",
+    "frameworks": "Heç bir JS framework tələb olunmur",
+    "code": "Tamamilə sahib olduğunuz HTML/CSS"
   },
   "Product": {
     "title": "Əsas Məhsulumuz",
     "newBadge": "Yeni",
-    "name": "Foundrr",
+    "name": "Foundrr WebAI",
     "description": "Tam, yüklənə bilən biznes veb-saytları hazırlayan anında sayt generatoru. Ödəniş etməzdən əvvəl saytınıza baxın. Abunə yoxdur, sadəcə birdəfəlik ödəniş.",
     "link": "foundrr.site-a keçin",
     "generating": "Hazırlanır..."
   },
-  "ProductsPage": {
-    "title": "Məhsullarımız",
-    "subtitle": "Sadəlik və sürət üçün hazırlanmış alətlər.",
-    "comingSoon": "Tezliklə",
-    "notifyMe": "Xəbər Et"
+  "Pricing": {
+    "title": "Sadə Qiymət",
+    "preview": "Ödəniş etməzdən əvvəl bütün sayta baxa bilərsiniz. Sürpriz yoxdur.",
+    "forWhoTitle": "Bu kimin üçündür?",
+    "forWho": {
+      "1": "Təcili sayta ehtiyacı olan frilanserlər",
+      "2": "Müştəri prototipləri hazırlayan agentliklər",
+      "3": "Aylıq SaaS ödənişlərini sevməyən qurucular"
+    }
   },
   "ContactPage": {
     "title": "Bizimlə Əlaqə",
     "subtitle": "Sizdən eşitmək istərdik. Dəstək kanallarımızla tanış olun.",
     "email": "E-poçt Dəstəyi",
     "whatsapp": "WhatsApp"
+  },
+  "AboutPage": {
+    "title": "Foundrr Group Haqqında",
+    "subtitle": "Biz sizin vaxtınıza və mülkiyyətinizə hörmət edən sadə, etibarlı proqram təminatı qurmağa fokuslanmış rəqəmsal məhsul studiyasıyıq.",
+    "whoWeAreTitle": "Biz Kimik",
+    "whoWeAre1": "Foundrr Group sonsuz böyümə arxasınca qaçan VC dəstəkli bir şirkət deyil. Biz proqram təminatının çox mürəkkəb, çox bahalı və abunə əsaslı olduğuna inanan kiçik, müstəqil bir qrup qurucuyuq.",
+    "whoWeAre2": "Biz bir dəfə ödəniş edib, sonsuza qədər sahib olacağınız alətlər qururuq. Abunə yoxdur. Giriş maneələri yoxdur. Sadəcə problemi həll edən və işinizi asanlaşdıran kod.",
+    "philosophyTitle": "Fəlsəfəmiz",
+    "philosophyDesc": "'Darıxdırıcı Proqram Təminatı' manifestinə inanırıq. Hər həftə dəyişən funksiya ilə dolu platformalardansa, etibarlı, sürətli və sadə alətlər daha yaxşıdır.",
+    "missionTitle": "Missiyamız",
+    "missionDesc": "Frilanserləri və yaradıcıları rəqəmsal aktivlərinə sahib çıxmaqla gücləndirmək, işə öz veb-saytlarından başlayaraq."
   }
 }

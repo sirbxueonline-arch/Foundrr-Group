@@ -1,25 +1,62 @@
 @import "tailwindcss";
 
 :root {
-  --background: #09090b;
+  --background: #0f172a;
   --foreground: #ffffff;
 }
 
 @theme {
   --font-inter: var(--font-inter);
+
+  --animate-aurora: aurora 20s linear infinite;
+  --animate-float-slow: float 8s ease-in-out infinite;
+  --animate-float-delayed: float 8s ease-in-out 4s infinite;
+
+  @keyframes aurora {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+      transform: rotate(180deg) scale(1.1);
+    }
+
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
 }
 
 body {
-    background-color: var(--background);
-    color: var(--foreground);
-    @apply antialiased font-sans;
+  background-color: var(--background);
+  color: var(--foreground);
+  @apply antialiased font-sans;
 }
 
 /* Custom utilities for glassmorphism */
 .glass {
-    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-sm;
+  @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-lg;
 }
 
 .glass-dark {
-    @apply bg-zinc-950/70 backdrop-blur-md border border-white/5 shadow-xl;
+  @apply bg-zinc-950/70 backdrop-blur-md border border-white/5 shadow-xl;
+}
+
+/* Utility to ensure text balance */
+.text-balance {
+  text-wrap: balance;
 }

@@ -2,41 +2,73 @@
   "Navbar": {
     "brand": "Foundrr Group",
     "products": "Products",
+    "about": "About",
     "contact": "Contact",
     "getInTouch": "Get in Touch"
   },
   "Hero": {
     "badge": "Foundrr Group",
-    "title": "Building simple<br />digital tools.",
-    "subtitle": "We strip away complexity to build stable, reliable software that respects your time and attention."
+    "title": "We build boring software that works.",
+    "subtitle": "No subscriptions. No dashboards. Just tools that do one job well.",
+    "cta": "See Foundrr in action"
   },
-  "Values": {
-    "title": "Our Approach",
-    "simplicityTitle": "Simplicity First",
-    "simplicityDesc": "We believe software should be essentially simple. No feature bloat, just tools that work.",
-    "reliabilityTitle": "Reliability",
-    "reliabilityDesc": "Our products are built to last. We prioritize stability over chasing the latest trends.",
+  "HowItWorks": {
+    "title": "Our Flagship: Foundrr WebAI",
+    "step1Title": "1. Describe",
+    "step1Desc": "Tell the AI what you need in plain English.",
+    "step2Title": "2. Preview",
+    "step2Desc": "See your full site instantly. No sign-up required.",
+    "step3Title": "3. Download",
+    "step3Desc": "Pay once. Get the code. Host it anywhere."
+  },
+  "Proof": {
+    "dontsTitle": "What we don't do",
+    "donts": {
+      "subs": "No subscriptions",
+      "accounts": "No accounts to manage",
+      "roadmaps": "No feature roadmap blog posts"
+    },
+    "dos": {
+      "oneTool": "One tool. One price. One outcome."
+    },
     "performanceTitle": "Performance",
-    "performanceDesc": "Fast, responsive, and lightweight. We respect your users' bandwidth and patience."
+    "speed": "Generated sites load in < 100ms",
+    "frameworks": "Zero JS frameworks required",
+    "code": "Plain HTML/CSS you own forever"
   },
   "Product": {
     "title": "Flagship Product",
     "newBadge": "New",
-    "name": "Foundrr",
+    "name": "Foundrr WebAI",
     "description": "An instant website generator that produces complete, downloadable business websites. Preview your entire site before you pay. No subscriptions, just a simple one-time purchase.",
     "link": "Visit foundrr.site",
     "generating": "Generating..."
   },
-  "ProductsPage": {
-    "title": "Our Products",
-    "subtitle": "Tools built for simplicity and performance.",
-    "comingSoon": "Coming Soon",
-    "notifyMe": "Notify Me"
+  "Pricing": {
+    "title": "Simple Pricing",
+    "preview": "You can preview the entire site before paying. No surprises.",
+    "forWhoTitle": "Who is this for?",
+    "forWho": {
+      "1": "Freelancers who need a site yesterday",
+      "2": "Agencies shipping client prototypes",
+      "3": "Builders who hate monthly SaaS fees"
+    }
   },
   "ContactPage": {
     "title": "Get in Touch",
     "subtitle": "We'd love to hear from you. Check out our support channels.",
     "email": "Email Support",
     "whatsapp": "WhatsApp"
+  },
+  "AboutPage": {
+    "title": "About Foundrr Group",
+    "subtitle": "We are a digital product studio focused on building simple, reliable software that respects your time and ownership.",
+    "whoWeAreTitle": "Who We Are",
+    "whoWeAre1": "Foundrr Group is not a VC-backed unicorn chasing infinite growth. We are a small, independent studio of builders who believe software has become too complex, too expensive, and too rental-based.",
+    "whoWeAre2": "We build tools that you pay for once and keep forever. No subscriptions. No login walls. Just code that solves a problem and gets out of your way.",
+    "philosophyTitle": "Our Philosophy",
+    "philosophyDesc": "We believe in the 'Boring Software' manifesto. Reliable, fast, and simple tools are better than feature-bloated platforms that change every week.",
+    "missionTitle": "Our Mission",
+    "missionDesc": "To empower freelancers and creators by giving them ownership of their digital assets, starting with their websites."
   }
 }
