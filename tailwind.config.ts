@@ -15,14 +15,17 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         zinc: {
-            850: "#1f1f22",
-            900: "#18181b",
-            950: "#09090b",
+          850: "#1f1f22",
+          900: "#18181b",
+          950: "#09090b",
         }
       },
       animation: {
         "fade-up": "fadeUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards",
         "scale-in": "scaleIn 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards",
+        "aurora": "aurora 60s linear infinite",
+        "float-slow": "float 20s ease-in-out infinite",
+        "float-delayed": "float 15s ease-in-out infinite reverse",
       },
       keyframes: {
         fadeUp: {
@@ -33,9 +36,18 @@ const config: Config = {
           "0%": { opacity: "0", transform: "scale(0.95)" },
           "100%": { opacity: "1", transform: "scale(1)" },
         },
+        aurora: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
       },
     },
   },
   plugins: [],
 };
+
 export default config;

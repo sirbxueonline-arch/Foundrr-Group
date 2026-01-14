@@ -1,5 +1,7 @@
-import {useTranslations} from 'next-intl';
-import {Link} from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
+import Background from '@/components/Background';
+import TiltCard from '@/components/TiltCard';
 
 export default function Home() {
   const t = useTranslations();
@@ -7,10 +9,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-zinc-950 selection:bg-white selection:text-zinc-950 overflow-x-hidden">
       {/* Background Gradients */}
-      <div className="fixed inset-0 z-0 pointer-events-none">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-white/[0.02] blur-3xl rounded-full mix-blend-screen" />
-        <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-indigo-500/[0.05] blur-[100px] rounded-full" />
-      </div>
+      <Background />
+
 
       {/* Navbar - Handled in layout.tsx */}
 
@@ -27,64 +27,74 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Philosophy Grid */}
+        {/* Philosophy Grid - Bento Style */}
         <section className="animate-fade-up delay-300 mb-40">
           <h2 className="text-xs font-semibold text-zinc-500 mb-8 uppercase tracking-[0.2em] pl-1">{t('Values.title')}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="group relative p-8 rounded-3xl bg-zinc-900/40 border border-white/5 hover:border-white/10 overflow-hidden transition-all duration-500">
-                <div className="absolute inset-0 bg-gradient-to-br from-white/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="relative z-10">
-                  <div className="w-10 h-10 bg-zinc-800/50 rounded-xl flex items-center justify-center text-lg mb-6 border border-white/5 text-zinc-200 group-hover:scale-105 transition-transform duration-300">✨</div>
-                  <h3 className="text-lg font-semibold text-white mb-3 tracking-tight">{t('Values.simplicityTitle')}</h3>
+          <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-3 gap-6 auto-rows-[minmax(180px,auto)]">
+
+            {/* Simplicity - Tall Card */}
+            <div className="md:col-span-3 lg:col-span-1 lg:row-span-2 group relative p-8 rounded-3xl bg-zinc-900/40 border border-white/5 hover:border-white/10 overflow-hidden transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-white/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative z-10 flex flex-col h-full justify-between">
+                <div>
+                  <div className="w-12 h-12 bg-zinc-800/50 rounded-2xl flex items-center justify-center text-xl mb-6 border border-white/5 text-zinc-200 group-hover:scale-110 transition-transform duration-300">✨</div>
+                  <h3 className="text-xl font-semibold text-white mb-3 tracking-tight">{t('Values.simplicityTitle')}</h3>
                   <p className="text-zinc-400 text-sm leading-relaxed group-hover:text-zinc-300 transition-colors">{t('Values.simplicityDesc')}</p>
                 </div>
+                <div className="w-full h-32 mt-8 rounded-xl bg-gradient-to-t from-zinc-950/50 to-transparent border border-white/5 opacity-50 group-hover:opacity-80 transition-opacity" />
+              </div>
             </div>
 
-             <div className="group relative p-8 rounded-3xl bg-zinc-900/40 border border-white/5 hover:border-white/10 overflow-hidden transition-all duration-500">
-                <div className="absolute inset-0 bg-gradient-to-br from-white/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="relative z-10">
-                  <div className="w-10 h-10 bg-zinc-800/50 rounded-xl flex items-center justify-center text-lg mb-6 border border-white/5 text-zinc-200 group-hover:scale-105 transition-transform duration-300">🛡️</div>
-                  <h3 className="text-lg font-semibold text-white mb-3 tracking-tight">{t('Values.reliabilityTitle')}</h3>
-                  <p className="text-zinc-400 text-sm leading-relaxed group-hover:text-zinc-300 transition-colors">{t('Values.reliabilityDesc')}</p>
+            {/* Reliability - Wide Card */}
+            <div className="md:col-span-3 lg:col-span-2 group relative p-8 rounded-3xl bg-zinc-900/40 border border-white/5 hover:border-white/10 overflow-hidden transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative z-10 flex flex-col md:flex-row gap-6 items-start">
+                <div className="flex-1">
+                  <div className="w-12 h-12 bg-zinc-800/50 rounded-2xl flex items-center justify-center text-xl mb-6 border border-white/5 text-zinc-200 group-hover:scale-110 transition-transform duration-300">🛡️</div>
+                  <h3 className="text-xl font-semibold text-white mb-3 tracking-tight">{t('Values.reliabilityTitle')}</h3>
+                  <p className="text-zinc-400 text-sm leading-relaxed group-hover:text-zinc-300 transition-colors max-w-sm">{t('Values.reliabilityDesc')}</p>
                 </div>
+                <div className="hidden md:block w-32 h-32 rounded-full border border-emerald-500/20 bg-emerald-500/5 animate-pulse" />
+              </div>
             </div>
 
-             <div className="group relative p-8 rounded-3xl bg-zinc-900/40 border border-white/5 hover:border-white/10 overflow-hidden transition-all duration-500">
-                <div className="absolute inset-0 bg-gradient-to-br from-white/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="relative z-10">
-                  <div className="w-10 h-10 bg-zinc-800/50 rounded-xl flex items-center justify-center text-lg mb-6 border border-white/5 text-zinc-200 group-hover:scale-105 transition-transform duration-300">⚡</div>
-                  <h3 className="text-lg font-semibold text-white mb-3 tracking-tight">{t('Values.performanceTitle')}</h3>
-                  <p className="text-zinc-400 text-sm leading-relaxed group-hover:text-zinc-300 transition-colors">{t('Values.performanceDesc')}</p>
-                </div>
+            {/* Performance - Standard Card */}
+            <div className="md:col-span-3 lg:col-span-2 group relative p-8 rounded-3xl bg-zinc-900/40 border border-white/5 hover:border-white/10 overflow-hidden transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative z-10">
+                <div className="w-12 h-12 bg-zinc-800/50 rounded-2xl flex items-center justify-center text-xl mb-6 border border-white/5 text-zinc-200 group-hover:scale-110 transition-transform duration-300">⚡</div>
+                <h3 className="text-xl font-semibold text-white mb-3 tracking-tight">{t('Values.performanceTitle')}</h3>
+                <p className="text-zinc-400 text-sm leading-relaxed group-hover:text-zinc-300 transition-colors">{t('Values.performanceDesc')}</p>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Flagship Product */}
         <section className="animate-fade-up delay-400 mb-40">
-           <h2 className="text-xs font-semibold text-zinc-500 mb-8 uppercase tracking-[0.2em] pl-1">{t('Product.title')}</h2>
-          <Link href="https://foundrr.site" target="_blank" className="block group">
-            <div className="relative overflow-hidden rounded-[2rem] bg-zinc-900 border border-white/10 p-8 md:p-16 transition-all duration-500 hover:border-white/20 hover:shadow-2xl hover:shadow-indigo-500/10">
+          <h2 className="text-xs font-semibold text-zinc-500 mb-8 uppercase tracking-[0.2em] pl-1">{t('Product.title')}</h2>
+          <Link href="https://foundrr.site" target="_blank" className="block group cursor-none">
+            <TiltCard className="rounded-[2rem] bg-zinc-900/50 border border-white/10 p-8 md:p-16 transition-all duration-500 hover:border-white/20 hover:shadow-2xl hover:shadow-indigo-500/10 overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-zinc-900/50 to-zinc-950 pointer-events-none" />
               <div className="relative z-10 flex flex-col md:flex-row justify-between gap-8 items-start">
                 <div className="max-w-xl">
-                    <div className="flex items-center gap-3 mb-4">
-                        <div className="px-2.5 py-0.5 rounded-full border border-indigo-400/30 bg-indigo-500/10 text-indigo-300 text-xs font-medium">{t('Product.newBadge')}</div>
-                        <h3 className="text-3xl font-bold text-white tracking-tight">{t('Product.name')}</h3>
-                    </div>
-                    <p className="text-zinc-400 text-lg leading-relaxed mb-8">
-                        {t('Product.description')}
-                    </p>
-                     <div className="inline-flex items-center text-sm font-medium text-white border-b border-white/20 pb-0.5 group-hover:border-white transition-all">
-                        {t('Product.link')} <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-                    </div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="px-2.5 py-0.5 rounded-full border border-indigo-400/30 bg-indigo-500/10 text-indigo-300 text-xs font-medium">{t('Product.newBadge')}</div>
+                    <h3 className="text-3xl font-bold text-white tracking-tight">{t('Product.name')}</h3>
+                  </div>
+                  <p className="text-zinc-400 text-lg leading-relaxed mb-8">
+                    {t('Product.description')}
+                  </p>
+                  <div className="inline-flex items-center text-sm font-medium text-white border-b border-white/20 pb-0.5 group-hover:border-white transition-all">
+                    {t('Product.link')} <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                  </div>
                 </div>
                 {/* Abstract Visual Representation */}
                 <div className="w-full md:w-64 h-40 md:h-auto aspect-video rounded-xl bg-zinc-950 border border-white/5 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-500">
-                     <span className="text-zinc-700 font-mono text-xs">{t('Product.generating')}</span>
+                  <span className="text-zinc-700 font-mono text-xs">{t('Product.generating')}</span>
                 </div>
               </div>
-            </div>
+            </TiltCard>
           </Link>
         </section>
 
