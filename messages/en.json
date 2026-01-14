@@ -1,0 +1,30 @@
+{
+  "Navbar": {
+    "brand": "Foundrr Group",
+    "products": "Products",
+    "contact": "Contact",
+    "getInTouch": "Get in Touch"
+  },
+  "Hero": {
+    "badge": "Foundrr Group",
+    "title": "Building simple<br />digital tools.",
+    "subtitle": "We strip away complexity to build stable, reliable software that respects your time and attention."
+  },
+  "Values": {
+    "title": "Our Approach",
+    "simplicityTitle": "Simplicity First",
+    "simplicityDesc": "We believe software should be essentially simple. No feature bloat, just tools that work.",
+    "reliabilityTitle": "Reliability",
+    "reliabilityDesc": "Our products are built to last. We prioritize stability over chasing the latest trends.",
+    "performanceTitle": "Performance",
+    "performanceDesc": "Fast, responsive, and lightweight. We respect your users' bandwidth and patience."
+  },
+  "Product": {
+    "title": "Flagship Product",
+    "newBadge": "New",
+    "name": "Foundrr",
+    "description": "An instant website generator that produces complete, downloadable business websites. Preview your entire site before you pay. No subscriptions, just a simple one-time purchase.",
+    "link": "Visit foundrr.site",
+    "generating": "Generating..."
+  }
+}

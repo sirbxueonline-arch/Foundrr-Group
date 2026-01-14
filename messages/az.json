@@ -1,0 +1,30 @@
+{
+  "Navbar": {
+    "brand": "Foundrr Group",
+    "products": "Məhsullar",
+    "contact": "Əlaqə",
+    "getInTouch": "Bizimlə Əlaqə"
+  },
+  "Hero": {
+    "badge": "Foundrr Group",
+    "title": "Sadə rəqəmsal<br />alətlər qururuq.",
+    "subtitle": "Mürəkkəbliyi aradan qaldıraraq, vaxtınıza və diqqətinizə hörmət edən sabit, etibarlı proqram təminatı hazırlayırıq."
+  },
+  "Values": {
+    "title": "Yanaşmamız",
+    "simplicityTitle": "İlk növbədə Sadəlik",
+    "simplicityDesc": "Proqram təminatının mahiyyəti sadə olmalıdır. Lazımsız funksiyalar yox, sadəcə işləyən alətlər.",
+    "reliabilityTitle": "Etibarlılıq",
+    "reliabilityDesc": "Məhsullarımız uzunmüddətli istifadə üçün nəzərdə tutulub. Son trendləri izləməkdənsə, sabitliyə üstünlük veririk.",
+    "performanceTitle": "Sürət",
+    "performanceDesc": "Sürətli və yüngül. Biz istifadəçilərinizin vaxtına hörmət edirik."
+  },
+  "Product": {
+    "title": "Əsas Məhsulumuz",
+    "newBadge": "Yeni",
+    "name": "Foundrr",
+    "description": "Tam, yüklənə bilən biznes veb-saytları hazırlayan anında sayt generatoru. Ödəniş etməzdən əvvəl saytınıza baxın. Abunə yoxdur, sadəcə birdəfəlik ödəniş.",
+    "link": "foundrr.site-a keçin",
+    "generating": "Hazırlanır..."
+  }
+}
