@@ -255,13 +255,47 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="flex flex-col md:flex-row justify-between items-center py-10 border-t border-white/5 text-sm text-zinc-600">
-          <div className="mb-4 md:mb-0 hover:text-zinc-400 transition-colors">&copy; {new Date().getFullYear()} {t('Navbar.brand')}</div>
-          <div className="flex gap-8">
-            <Link href="https://foundrr.site" target="_blank" className="hover:text-white transition-colors">Foundrr WebAI</Link>
-            <Link href="/about" className="hover:text-white transition-colors">{t('Navbar.about')}</Link>
-            <a href="mailto:contact@foundrr.online" className="hover:text-white transition-colors">{t('Navbar.contact')}</a>
-            <a href="mailto:support@foundrr.online" className="hover:text-white transition-colors">Support</a>
+        <footer className="py-10 border-t border-white/5 text-sm text-zinc-600">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-4 md:mb-0 hover:text-zinc-400 transition-colors">&copy; {new Date().getFullYear()} {t('Navbar.brand')}</div>
+            <div className="flex gap-8">
+              <Link href="https://foundrr.site" target="_blank" className="hover:text-white transition-colors">Foundrr WebAI</Link>
+              <Link href="/about" className="hover:text-white transition-colors">{t('Navbar.about')}</Link>
+              <a href="mailto:contact@foundrr.online" className="hover:text-white transition-colors">{t('Navbar.contact')}</a>
+              <a href="mailto:support@foundrr.online" className="hover:text-white transition-colors">Support</a>
+            </div>
+          </div>
+
+          {/* GULUZADA Studio Signature */}
+          <div 
+            className="guluzada-credit" 
+            style={{
+              textAlign: "center",
+              padding: "2rem 0",
+              fontSize: "14px",
+              fontFamily: "'Space Grotesk', sans-serif",
+              color: "currentColor",
+              opacity: 0.8,
+            }}
+          >
+            <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet" />
+            
+            <span style={{ fontWeight: 400, opacity: 0.7 }}>by </span> 
+            <a 
+              href="https://guluzada.dev" 
+              target="_blank" 
+              rel="noreferrer"
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                display: "inline-block",
+                transition: "opacity 0.3s ease",
+              }}
+              onMouseOver={(e) => (e.currentTarget.style.opacity = "0.6")}
+              onMouseOut={(e) => (e.currentTarget.style.opacity = "1")}
+            >
+              <span style={{ fontWeight: 700, letterSpacing: "-0.02em" }}>GULUZADA</span> <span style={{ fontWeight: 300 }}>Studio</span>
+            </a>
           </div>
         </footer>
       </main>
